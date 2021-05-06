@@ -49,7 +49,7 @@ class App extends Component {
     const title='Github Finder'
     const icon="fab fa-github"
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar title={title} icon ={icon} />
         <Alerts alert={this.state.alert} />
